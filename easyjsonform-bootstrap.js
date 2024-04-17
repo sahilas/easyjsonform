@@ -11,51 +11,27 @@ var ejfBootstrapStyle = {
         style: {},
     },
     BuilderToolbar: { 
-        classList: ['btn-group', 'mx-auto'],
+        classList: ['join', 'mx-auto'],
         style: {},
     },
     BuilderToolbarButton: { 
-        classList: ['btn', 'btn-outline-primary', 'btn-sm'],
+        classList: ['btn', 'btn-outline','btn-primary','join-item', 'btn-sm'],
         style: {},
     },
     BuilderFieldTooldbar: {
-        classList: ['btn-group','w-100'],
+        classList: ['join','w-100'],
         style: {},
     },
     BuilderFieldTooldbarButton: {
-        classList: ['btn','btn-outline-primary', 'p-2'],
+        classList: ['btn','btn-outline','btn-primary','join-item', 'btn-sm'],
         style: {},
     },
     BuilderFieldTooldbarDeleteButton: {
-        classList: ['btn','btn-outline-danger', 'p-2'],
+        classList: ['btn','btn-outline','btn-error','join-item', 'btn-sm'],
         style: {},
     },
     Form: { 
         classList: [],
-        style: {},
-    },
-    FieldFile: {
-        classList: ['my-3'],
-        style: {},
-    },
-    FieldFileLabel: {
-        classList: ['form-label'],
-        style: {},
-    },
-    FieldFileInput: {
-        classList: ['form-control'],
-        style: {},
-    },
-    FieldFileValue: {
-        classList: ['d-flex', 'flex-nowrap', 'btn-group'],
-        style: {},
-    },
-    FieldFileLink: {
-        classList: ['btn', 'btn-outline-primary', 'flex-grow-1', 'text-start'],
-        style: {},
-    },
-    FieldFileClear: {
-        classList: ['btn', 'btn-outline-danger', 'flex-grow-0'],
         style: {},
     },
     FieldMultiplechoice: {
@@ -119,7 +95,11 @@ var ejfBootstrapStyle = {
         style: {},
     },
     fieldTextInput: {
-        classList: ['form-control'],
+        classList: ['input', 'input-bordered', 'input-sm'],
+        style: {},
+    },
+    fieldTextAreaInput: {
+        classList: ['textarea', 'textarea-bordered', 'textarea-xs','h-fit'],
         style: {},
     },
     FieldTextgroup: {

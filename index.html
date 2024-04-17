@@ -1,0 +1,34 @@
+<input type="checkbox" value="light" class="toggle theme-controller"/>
+
+<div id="my-container"></div>
+<button onclick="saveForm()">Save Form</button>
+
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script src="./easyjsonform-bootstrap.js"></script>
+<script src="./easyjsonform.js"></script>
+
+<script>
+
+// Initializing form on the page with bootstrap styling
+// The variable ejfBootstrapStyle is located at easyjsonform-bootstrap.js
+var ejf = new EasyJsonForm('my-form', null, ejfBootstrapStyle);
+document.getElementById('my-container').appendChild(ejf.builderGet());
+// Save method when user click on Save form button
+function saveForm() {
+    // structure is a javascript object. It can be used to recreate the form
+    // using a EasyJsonForm object or can be saved in your database. For that,
+    // the object needs to be converted as a json string using JSON.stringify
+
+    let structure = ejf.structureExport();
+    let jsonStructure = JSON.stringify(structure);
+    
+    // Replace console.log by your API call to save jsonStructure into your db
+    console.log(jsonStructure);
+    
+    // If you want to update an input field (usually a hidden field) with the
+    // JSON representation of this form, you must provide a callback function.
+    // This is explained when we present the options (4th) argument.
+}
+</script>
